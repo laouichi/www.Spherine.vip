@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spherine</title>
+    <link rel="icon" href="dexscreen_icon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="spherine-Photoroom.png" alt="Logo" class="logo">
+        <div class="header-content">
+            <h1>Spherine</h1>
+            <nav>
+                <ul>
+                    <li><a class="btn" href="#about">About</a></li>
+                    <li><a class="btn" href="#roadmap">Roadmap</a></li>
+                    <li><a class="btn" href="#tokenomics">Tokenomics</a></li>
+                    <li><a class="btn" href="#community">Community</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="#hero" class="fade-in">
+        <div class="container">
+            <h2 class="highlighted-text">The Next Big Meme Coin!</h2>
+            <p>Join Spherine and be ready to take over the crypto world!</p>
+            <a href="#about" class="btn-large">Buy Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="#" class="fade-in">
+        <div class="container">
+            <h2>About Spherine</h2>
+            <p>Spherine is a community-driven cryptocurrency with a mission to bring joy and value to its holders. Inspired by the adorable Fennec Fox, our coin aims to create a fun and engaging experience for everyone involved.</p>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="#roadmap" class="fade-in">
+        <div class="container">
+            <h2>Roadmap</h2>
+            <div class="roadmap">
+                <div class="roadmap-item">
+                    <span class="roadmap-number">1</span>
+                    <p>Q1: Launch and Initial Marketing</p>
+                </div>
+                <div class="roadmap-item">
+                    <span class="roadmap-number">2</span>
+                    <p>Q2: Community Building and Partnerships</p>
+                </div>
+                <div class="roadmap-item">
+                    <span class="roadmap-number">3</span>
+                    <p>Q3: Major Exchange Listings</p>
+                </div>
+                <div class="roadmap-item">
+                    <span class="roadmap-number">4</span>
+                    <p>Q4: New Features and Updates</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="#tokenomics" class="fade-in">
+        <div class="container">
+            <h2>Tokenomics</h2>
+            <div class="tokenomics">
+                <div class="tokenomics-item">
+                    <h3>Total Supply</h3>
+                    <p>1,000,000,000 Spherine</p>
+                </div>
+                <div class="tokenomics-item">
+                    <h3>Liquidity Pool</h3>
+                    <p>20%</p>
+                </div>
+                <div class="tokenomics-item">
+                    <h3>Marketing & Development</h3>
+                    <p>10%</p>
+                </div>
+                <div class="tokenomics-item">
+                    <h3>Team & Advisors</h3>
+                    <p>10%</p>
+                </div>
+            </div>
+            <p>Contract Address: <strong>YOUR_CONTRACT_ADDRESS_HERE</strong></p>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="#community" class="fade-in">
+        <div class="container">
+            <h2>Join Our Community</h2>
+            <p>Stay updated and connect with Dragons enthusiasts!</p>
+            <div class="social-links">
+                <a href="https://x.com/spherinevoltrax?t=Z_CoA3_t2CoGe91f_4O4TA&s=09" target="_blank"><img src="Xicon.png" alt="X"></a>
+                <a href="https://t.me/Spherine" target="_blank"><img src="telegram_icon.png.png" alt="Telegram"></a>
+                <a href="https://x.com/spherinevoltrax?t=Z_CoA3_t2CoGe91f_4O4TA&s=09" target="_blank"><img src="unnamed.png" alt="Dexscreener"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Spherine. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Animations -->
+    <script>
+        // Smooth scrolling animation for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Bounce effect on logo hover
+        const logo = document.querySelector('.logo');
+        logo.addEventListener('mouseover', () => {
+            logo.classList.add('bounce');
+        });
+        logo.addEventListener('animationend', () => {
+            logo.classList.remove('bounce');
+        });
+
+        // Scroll reveal effect
+        const faders = document.querySelectorAll('.fade-in');
+        const appearOptions = { threshold: 0.5 };
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('appear');
+                appearOnScroll.unobserve(entry.target);
+            });
+        }, appearOptions);
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+</body>
+</html>

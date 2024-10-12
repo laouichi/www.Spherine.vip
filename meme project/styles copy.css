@@ -1,0 +1,188 @@
+body {
+    color: #E0E0E0; /* Adjust to your preferred color */
+    font-family: Arial, sans-serif; /* Choose a readable font */
+    line-height: 1.6; /* Adds readability by increasing spacing */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    /* Background image */
+    background-image: url('z00cs20h.png');
+    background-size: cover; /* Change to 'contain' if you want to fit the image within the view */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Avoid repeating the image */
+    background-attachment: fixed; /* Image stays in place when scrolling */
+}
+
+/* For opacity or color overlay */
+.text-overlay {
+    background-color: rgb(255, 255, 255); /* Adjust the opacity as needed */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header {
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center header content */
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 100px; /* Control the logo size */
+    width: auto;
+}
+
+.header-content {
+    color: white;
+    margin-left: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    color: #fff;
+    padding: 6em 0;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color: #E0E0E0;
+}
+
+.btn {
+    background: #46f6fd;
+    color: #ffffff;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn1 {
+    background: #f0e380;  /* Gold background color */
+    color: #333;          /* Dark text color for contrast */
+    border: 2px solid #80dcf6;  /* Matching border */
+    border-radius: 30px;
+    font-size: 10px;      /* Control the size of the button text */
+    font-weight: bold;    /* Makes the text bolder */
+    cursor: pointer;
+    text-transform: uppercase;  /* Makes text uppercase */
+    width: 600px;                /* Adjust width or set to a specific size if needed */
+    height: 60px;           /* Control the height of the button */
+    transition: all 0.3s ease; 
+}
+
+.btn1:hover {
+    background: #ed7fa9;
+}
+
+.btn:hover {
+    background: #ed7fa9;
+}
+.btn-large {
+    background: #ed7fa9;
+}
+
+section {
+    padding: 4em 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #fbf690;
+}
+
+.roadmap-item, .tokenomics-item {
+    background: rgba(255, 255, 255, 0.2); /* Slightly transparent background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 1em; /* Spacing within the box */
+    margin: 1em 0; /* Spacing between boxes */
+    transition: transform 0.3s; /* Add transition for hover effect */
+}
+
+.roadmap-item:hover, .tokenomics-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.tokenomics {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.tokenomics-item {
+    width: 80%; /* Adjust width as necessary */
+}
+
+.roadmap {
+    display: flex;
+    flex-direction: column; /* Stack roadmap items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.roadmap-number {
+    font-size: 2em; /* Larger font for numbers */
+    font-weight: bold; /* Bold numbers */
+    color: #fbf690; /* Color for numbers */
+    margin-right: 1em; /* Space between number and text */
+}
+
+.social-links {
+    display: flex; /* Display links in a row */
+    justify-content: center; /* Center the links */
+    gap: 15px; /* Space between links */
+}
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+.contract-icon {
+    width: 20px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 8px; /* Space between icon and text */
+    vertical-align: middle; /* Align with text */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
